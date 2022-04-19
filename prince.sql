@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.1
+-- version 5.1.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 18, 2019 at 07:48 PM
--- Server version: 10.1.33-MariaDB
--- PHP Version: 7.2.6
+-- Generation Time: Apr 19, 2022 at 08:25 AM
+-- Server version: 10.4.18-MariaDB
+-- PHP Version: 8.0.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -66,11 +65,11 @@ CREATE TABLE `customer` (
 --
 
 INSERT INTO `customer` (`CUST_ID`, `FIRST_NAME`, `LAST_NAME`, `PHONE_NUMBER`) VALUES
-(9, 'Hailee', 'Steinfield', '09394566543'),
-(11, 'A Walk in Customer', NULL, NULL),
-(14, 'Chuchay', 'Jusay', '09781633451'),
-(15, 'Kimbert', 'Duyag', '09956288467'),
-(16, 'Dieqcohr', 'Rufino', '09891344576');
+(9, 'Ayush', 'Singh', '9870693862'),
+(11, 'Priyanshi', 'Verma', '9867504932'),
+(14, 'Yash', 'Singhal', '9781633451'),
+(15, 'Ayush', 'Dwivedi', '9956288467'),
+(16, 'Parth', 'Bharadwaj', '9891344576');
 
 -- --------------------------------------------------------
 
@@ -95,8 +94,8 @@ CREATE TABLE `employee` (
 --
 
 INSERT INTO `employee` (`EMPLOYEE_ID`, `FIRST_NAME`, `LAST_NAME`, `GENDER`, `EMAIL`, `PHONE_NUMBER`, `JOB_ID`, `HIRED_DATE`, `LOCATION_ID`) VALUES
-(1, 'Prince Ly', 'Cesar', 'Male', 'princelycesar23@gmail.com', '09124033805', 1, '0000-00-00', 113),
-(2, 'Josuey', 'Mag-asos', 'Male', 'jmagaso@yahoo.com', '09091245761', 2, '2019-01-28', 156),
+(1, 'Ayushman', 'Chahar', 'Male', 'ayushman25@gmail.com', '09124033805', 1, '0000-00-00', 113),
+(2, 'Priyanshu', 'Verma', 'Male', 'priyanshu_verma@yahoo.com', '09091245761', 2, '2019-01-28', 156),
 (4, 'Monica', 'Empinado', 'Female', 'monicapadernal@gmail.com', '09123357105', 1, '2019-03-06', 158);
 
 -- --------------------------------------------------------
@@ -135,42 +134,42 @@ CREATE TABLE `location` (
 --
 
 INSERT INTO `location` (`LOCATION_ID`, `PROVINCE`, `CITY`) VALUES
-(111, 'Negros Occidental', 'Bacolod City'),
-(112, 'Negros Occidental', 'Bacolod City'),
-(113, 'Negros Occidental', 'Binalbagan'),
-(114, 'Negros Occidental', 'Himamaylan'),
-(115, 'Negros Oriental', 'Dumaguette City'),
-(116, 'Negros Occidental', 'Isabella'),
-(126, 'Negros Occidental', 'Binalbagan'),
-(130, 'Cebu', 'Bogo City'),
-(131, 'Negros Occidental', 'Himamaylan'),
-(132, 'Negros', 'Jupiter'),
+(111, 'Delhi', 'Delhi'),
+(112, 'Delhi', 'Delhi'),
+(113, 'Delhi', 'Delhi'),
+(114, 'Delhi', 'Delhi'),
+(115, 'Delhi', 'Delhi'),
+(116, 'Delhi', 'Delhi'),
+(126, 'Delhi', 'Delhi'),
+(130, 'Delhi', 'Delhi'),
+(131, 'Delhi', 'Delhi'),
+(132, 'Delhi', 'Delhi'),
 (133, 'Aincrad', 'Floor 91'),
-(134, 'negros', 'binalbagan'),
-(135, 'hehe', 'tehee'),
+(134, 'Delhi', 'Delhi'),
+(135, 'Delhi', 'Delhi'),
 (136, 'PLANET YEKOK', 'KOKEY'),
-(137, 'Camiguin', 'Catarman'),
-(138, 'Camiguin', 'Catarman'),
-(139, 'Negros Occidental', 'Binalbagan'),
+(137, 'Delhi', 'Delhi'),
+(138, 'Delhi', 'Delhi'),
+(139, 'Delhi', 'Delhi'),
 (140, 'Batangas', 'Lemery'),
-(141, 'Capiz', 'Panay'),
+(141, 'Delhi', 'Delhi'),
 (142, 'Camarines Norte', 'Labo'),
 (143, 'Camarines Norte', 'Labo'),
-(144, 'Camarines Norte', 'Labo'),
+(144, 'Delhi', 'Delhi'),
 (145, 'Camarines Norte', 'Labo'),
-(146, 'Capiz', 'Pilar'),
-(147, 'Negros Occidental', 'Moises Padilla'),
+(146, 'Delhi', 'Delhi'),
+(147, 'Delhi', 'Delhi'),
 (148, 'a', 'a'),
 (149, '1', '1'),
-(150, 'Negros Occidental', 'Himamaylan'),
-(151, 'Masbate', 'Mandaon'),
+(150, 'Delhi', 'Delhi'),
+(151, 'Delhi', 'Delhi'),
 (152, 'Aklanas', 'Madalagsasa'),
 (153, 'Batangas', 'Mabini'),
 (154, 'Bataan', 'Morong'),
-(155, 'Capiz', 'Pillar'),
-(156, 'Negros Occidental', 'Bacolod'),
+(155, 'Delhi', 'Delhi'),
+(156, 'Delhi', 'Delhi'),
 (157, 'Camarines Norte', 'Labo'),
-(158, 'Negros Occidental', 'Binalbagan');
+(158, 'Delhi', 'Delhi');
 
 -- --------------------------------------------------------
 
@@ -191,7 +190,7 @@ CREATE TABLE `manager` (
 --
 
 INSERT INTO `manager` (`FIRST_NAME`, `LAST_NAME`, `LOCATION_ID`, `EMAIL`, `PHONE_NUMBER`) VALUES
-('Prince Ly', 'Cesar', 113, 'PC@00', '09124033805'),
+('Ayushman', 'Chahar', 113, 'ayushman25@gmail.com', '09124033805'),
 ('Emman', 'Adventures', 116, 'emman@', '09123346576'),
 ('Bruce', 'Willis', 113, 'bruce@', NULL),
 ('Regine', 'Santos', 111, 'regine@', '09123456789');
