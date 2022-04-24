@@ -61,7 +61,7 @@ $opt .= "</select>";
                  First Name:
                 </div>
                 <div class="col-sm-9">
-                  <input class="form-control" placeholder="First Name" name="firstname" value="<?php echo $fname; ?>" required>
+                  <input class="form-control" placeholder="First Name" name="firstname" value="<?php echo $fname; ?>" required  pattern="^[a-zA-Z]*$" maxlength="15">
                 </div>
               </div>
               <div class="form-group row text-left text-warning">
@@ -69,7 +69,7 @@ $opt .= "</select>";
                  Last Name:
                 </div>
                 <div class="col-sm-9">
-                  <input class="form-control" placeholder="Last Name" name="lastname" value="<?php echo $lname; ?>" required>
+                  <input class="form-control" placeholder="Last Name" name="lastname" value="<?php echo $lname; ?>" required  pattern="^[a-zA-Z]*$" maxlength="15">
                 </div>
               </div>
               <div class="form-group row text-left text-warning">
@@ -89,7 +89,7 @@ $opt .= "</select>";
                  Email:
                 </div>
                 <div class="col-sm-9">
-                  <input class="form-control" placeholder="Email" name="email" value="<?php echo $email; ?>" required>
+                  <input type="email" class="form-control" placeholder="Email" name="email" value="<?php echo $email; ?>" required>
                 </div>
               </div>
               <div class="form-group row text-left text-warning">

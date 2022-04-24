@@ -33,13 +33,13 @@ if ($Aa=='User'){
                         <div class="table-responsive">
                         <form role="form" method="post" action="cust_transac.php?action=add">
                           <div class="form-group">
-                              <input class="form-control" placeholder="First Name" name="firstname" required>
+                              <input class="form-control" placeholder="First Name" name="firstname" required pattern="^[a-zA-Z]*$" maxlength="15">
                             </div>
                             <div class="form-group">
-                              <input class="form-control" placeholder="Last Name" name="lastname" required>
+                              <input class="form-control" placeholder="Last Name" name="lastname" required pattern="^[a-zA-Z]*$" maxlength="15" >
                             </div>
                             <div class="form-group">
-                              <input class="form-control" placeholder="Phone Number" name="phonenumber" required>
+                              <input type="number" class="form-control" placeholder="Phone Number" name="phonenumber" required length="10" min="6000000000" max="9999999999">
                             </div>
                             <hr>
 

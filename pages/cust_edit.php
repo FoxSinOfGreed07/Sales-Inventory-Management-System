@@ -45,7 +45,7 @@ if ($Aa=='User'){
                  First Name:
                 </div>
                 <div class="col-sm-9">
-                  <input class="form-control" placeholder="First Name" name="firstname" value="<?php echo $i; ?>" required>
+                  <input class="form-control" placeholder="First Name" name="firstname" value="<?php echo $i; ?>" required pattern="^[a-zA-Z]*$" maxlength="15">
                 </div>
               </div>
               <div class="form-group row text-left text-warning">
@@ -53,7 +53,7 @@ if ($Aa=='User'){
                  Last Name:
                 </div>
                 <div class="col-sm-9">
-                  <input class="form-control" placeholder="Last Name" name="lastname" value="<?php echo $a; ?>" required>
+                  <input class="form-control" placeholder="Last Name" name="lastname" value="<?php echo $a; ?>" required pattern="^[a-zA-Z]*$" maxlength="15">
                 </div>
               </div>
               <div class="form-group row text-left text-warning">
@@ -61,7 +61,7 @@ if ($Aa=='User'){
                  Contact #:
                 </div>
                 <div class="col-sm-9">
-                   <input class="form-control" placeholder="Phone Number" name="phone" value="<?php echo $b; ?>" required>
+                   <input type="number" class="form-control" placeholder="Phone Number" name="phone" value="<?php echo $b; ?>" required length="10" min="6000000000" max="9999999999">
                 </div>
               </div>
               <hr>
